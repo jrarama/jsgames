@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Game</title>
+	<link rel="stylesheet" href="../src/styles/snake.css">
+	<script src="../vendor/jquery.min.js"></script>
+	<script src="../vendor/handlebars.js"></script>
+	<script src="../src/scripts/snake.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var grid = document.getElementById('game-grid');
+			var game = new SnakeGame({ maxWidth: 700, element: grid });
+
+			$('#start').click(function() { 
+				game.start(); 
+				$(this).blur();
+			});
+		});
+	</script>
+</head>
+<body>
+	<h2>Snake Game</h2>
+
+	<p>Press Left Arrow Key to turn left. Press Right Arrow Key to turn right.</p>
+    <div class="game-container">
+    	<button id="start">Start</button>
+
+	    <div id="game-grid" class="game-grid">
+	    	<div class="grid-area absolute"></div>
+	    	<div class="snake-area absolute"></div>
+	    </div>
+    </div>
+</body>
+</html>

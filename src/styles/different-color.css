@@ -1,0 +1,8 @@
+.game-grid table {
+	border-collapse: collapse;
+}
+
+.game-grid table td {
+	border: 1px solid #ccc;
+	font-size: 5pt;
+}

@@ -1,0 +1,26 @@
+.game-container {
+	padding: 10px;
+}
+
+.game-grid {
+	width: 100%;
+	position: relative;
+}
+
+.game-grid .absolute {
+	position: absolute;
+}
+.game-grid .relative {
+	position: relative;
+}
+
+.game-grid .cell {
+	position: absolute;
+}
+
+.game-grid .snake-food {
+	border-radius: 100%;
+	-ms-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+}

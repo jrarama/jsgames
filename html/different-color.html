@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Different Color</title>
+	<link rel="stylesheet" href="../src/styles/different-color.css">
+	<script src="../vendor/jquery.min.js"></script>
+	<script src="../src/scripts/different-color.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var grid = document.getElementById('game-container');
+			var game = new DifferentColor({ element: grid });
+			game.start();
+		});
+	</script>
+</head>
+<body>
+	<h2>Find the Different Color</h2>
+
+    <div id="game-container">
+	    <div class="game-grid"></div>
+	    <div class="game-sidebar">
+	    	<div class="game-time"></div>
+	    	<div class="game-score"></div>
+	    </div>
+    </div>
+</body>
+</html>
